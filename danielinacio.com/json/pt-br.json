@@ -1,0 +1,365 @@
+{   
+     "idioma": [
+        {
+            "tIdioma": "Idioma",
+            "pt": "Português",
+            "en": "Inglês",
+            "es": "Espanhol"
+        }
+        
+    ],
+     "infoPessoal": [
+        {
+            "nome": "Daniel Inácio da Silva Júnior",
+            "subtitulo": "Web Developer - 24 anos - Franca SP - Brasil",
+            "frase": "Um profissional apaixonado por tecnologia e Design. Tenho como filosófia, que aplicações devem ser construídas com a máxima simplicidade e praticidade possível, oferecendo valor para seus usuários. Tudo isso aliado à um layout limpo, agradável e amigável."
+        }
+        
+    ],
+    "menu": [
+        {
+            "menu1": "Portfólio",
+            "menu2": "Habilidades",
+            "menu3": "Formação",
+            "menu4": "Contato"
+        }
+        
+    ],
+    "habilidades": [
+        {
+            "front": "Front-end",
+            "back": "Back-end",
+            "bd": "Banco de Dados",
+            "fram": "Frameworks",
+            "graf": "Gráficos"
+        }
+        
+    ],
+    "formacao": [
+        {
+            "t_formacao": "Formação",
+            "forma1_titulo": "FATEC - Faculdade de Tecnologia Dr. Thomaz Novelino",
+            "forma1_curso": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "forma1_perido": "2011 - 2014 - ",
+            "forma1_contato": "contato",
+            "forma2_titulo": "IFMG - Instituto Federal de Minas Gerais",
+            "forma2_curso": "Técnico em Infórmática - Programação Web",
+            "forma2_perido": "2007 - 2009 - ",
+            "forma3_titulo": "Escola Estadual José Bernardes de Faria",
+            "forma3_curso": "Ensino Médio",
+            "forma3_perido": "2002 - 2008 - ",
+            "forma4_titulo": "Escola Municipal Professor Franklin de Carvalho",
+            "forma4_curso": "Ensino Fundamental",
+            "forma4_perido": "1997 - 2001 - ",
+            "t_exp": "Experiência Profissional",
+            "exp1_empresa": "Orgsystem Software",
+            "exp1_cargo": "Web Developer",
+            "exp1_perido": "Desde 2014 - ",
+            "exp2_empresa": "Homea Solução Aplicada",
+            "exp2_cargo": "Web Designer",
+            "exp2_perido": "2013 - 2014 - ",
+            "exp3_empresa": "IDESUFRAN / AMAZONAS – Projeto Cidadão Digital",
+            "exp3_cargo": "Professor de Informática",
+            "exp3_perido": "2011 - 2014 - ",
+            "exp4_empresa": "IBGE - Instituto Brasileiro de Geografia e Estatística",
+            "exp4_cargo": "Agente Censitário de Informática",
+            "exp4_perido": "2010 - 2011 - ",
+            "link_contato": "contato"            
+        }
+        
+    ],
+    "contato": [
+        {
+            "t_titulo_c": "Contato",
+            "t_nome": "Nome",
+            "t_fone": "Telefone",
+            "t_email": "E-mail",
+            "t_msg": "Mensagem",
+            "t_btn": "Enviar"
+
+        }
+        
+    ],
+    "homea": [
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/folder1_danielinacio.com.png",
+            "descricao_img": "Homea - Folder Curso Compostagem Biodinâmica",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"A empresa Homea Solução aplicada presta consultoria na área da agricultura e pesquisas para o desenvolvimento de fertilizantes biodinâmicos."
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/folder2_danielinacio.com.png",
+            "descricao_img": "Homea - Folder Curso Homeopatia Preventiva ",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/folder3_danielinacio.com.png",
+            "descricao_img": "Homea – Folder de Natal 2013",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/site_danielinacio.com.png",
+            "descricao_img": "d",
+            "classe":"",
+            "link":"<a href='http://www.homea.com.br' target='_blank'>",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/homea_card_danielinacio.com.png",
+            "descricao_img": "Homea - Cartão de visita",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+        
+    ],
+    "lazarini": [
+        {
+            "titulo": "Studio Lazarini",
+            "img": "studiolazarini/layoutlazarini1_danielinacio.com.png",
+            "descricao_img": "O site www.studiolazarini.com foi desenvolvido para um portfólio que mostra todos os trabalhos de um Artista da Cidade de Franca-SP.",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"O Studio Lazarini é propriedade do Artista Aguinaldo Lazarini - Ilustrador, Designer e Arte Finalista."
+        }
+    ],
+    "cidadaodigital": [
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/cartaz1_cidadaodigital_danielinacio.com.png",
+            "descricao_img": "Escola Cidadão Digital –  Cartaz Divulgação Cursos 2013 Versão A3",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"A Escola Cidadão Digital é uma escola especializada em cursos profissionalizantes, onde são ministrados Curso Básico e Avançado de Informática e Web Designer."
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/cartaz2_cidadaodigital_danielinacio.com.png",
+            "descricao_img": "Escola Cidadão Digital – Panfleto Divulgação Cursos 2013 Reduzido Monocromático",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/cartaz3_cidadaodigital_danielinacio.com.png",
+            "descricao_img": "Escola Cidadão Digital – Panfleto Divulgação Cursos 2013 Versão Web",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/site_danielinacio.com.png",
+            "descricao_img": "Escola Cidadão Digital – Web Site",
+            "classe":"",
+            "link":"<a href='danielinacio.com/img/portfolio/parceiros/cidadaodigital/site' target='_blank'>",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/certificado1_danielinacio.com.png",
+            "descricao_img": "Escola Cidadão Digital – Certificado Curso Básico de Informática",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/certificado2_danielinacio.com.png",
+            "descricao_img": "Escola Cidadão Digital – Certificado Curso Avançado de Informática",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+        
+    ],
+    "idesufran": [
+        {
+            "titulo": "",
+            "img": "idesufran/layoutidesufran_danielinacio.com.png",
+            "descricao_img": "Instituto IDESUFRAN www.institutoidesufran.com",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"O Instituto IDESUFRAN é uma ONG que já trabalhou com projetos sociais na região de Franca -SP e já beneficiou mais de 5000 jovens na inclusão digital."
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/iv_encontro_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN – Logo IV Encontro Internacional em Pesquisas Institucionais em Medicina Tropical e Altas Diluições",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/arvore_da_vida_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN – Árvore da Vida",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/idesufran_card_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN – Cartão de Visita",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/folder1_idesufran_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN – Panfleto de divugalção da ONG",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+
+    ],
+    "compremania": [
+        {
+            "titulo": "",
+            "img": "compremania/site_cm_danielinacio.com.png",
+            "descricao_img": "",
+            "classe":"",
+            "link":"<a href='danielinacio.com/img/portfolio/parceiros/compremania/site' target='_blank'>",
+            "descricao_projeto":"O Shopping Virtual Compre Mania é um Market Place onde comerciantes e profissionais podem divulgar e vender seus produtos ou serviços online."
+        },
+        {
+            "titulo": "",
+            "img": "compremania/cmcard_danielinacio.com.png",
+            "descricao_img": "CompreMania - Cartão de Visita",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+    ],
+    "km5": [
+        {
+            "titulo": "",
+            "img": "km5/layout_km5_2_danielinacio.com.png",
+            "descricao_img": "Layout site versão 1 - www.km5.tv",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Km5.tv foi um canal de rede fechada cujo tema são Esportes Radicais"
+        },
+        {
+            "titulo": "",
+            "img": "km5/layout_km5_1_danielinacio.com.png",
+            "descricao_img": "Layout site versão 2 - www.km5.tv",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+    ],
+    "mmpm": [
+        {
+            "titulo": "",
+            "img": "ministerio_missoes_para_o_mundo/logo_missoes_danielinacio.com.png",
+            "descricao_img": "Ministério Missões para o mundo - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"O Ministério missões para o mundo é uma instituição religiosa filantrópica que ajuda financeiramente comunidades carentes de países da América do Sul e África"
+        },
+        {
+            "titulo": "",
+            "img": "ministerio_missoes_para_o_mundo/ministerio_cardpng_danielinacio.com.png",
+            "descricao_img": "Ministério Missões para o mundo - Cartão de Visita",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+    ],
+    "pains": [
+        {
+            "titulo": "",
+            "img": "pains/layoutpains_danielinacio.com.png",
+            "descricao_img": "Layout site www.painsesporteclube.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"O Pains Esporte Clube é um time de futebol do interior do estado de Minas Gerais. "
+        }
+    ],
+    "phocomagazine": [
+        {
+            "titulo": "",
+            "img": "phocomagazine/layoutphocomagazine_danielinacio.com.png",
+            "descricao_img": "Layout site www.phocomagazine.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Phoco Magazine foi uma revista de notícias e eventos locais da cidade de Lavras - MG."
+        }
+    ],
+    "esquadraomotoclube": [
+        {
+            "titulo": "",
+            "img": "esquadraomotoclube/layoutesquadraomotoclube_danielinacio.com.png",
+            "descricao_img": "Layout site www.esquadraomotoclubeformiga.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"O Esquadrão Moto Clube é um grupo de motociclista da cidade de Formiga MG."
+        }
+    ],
+    "blognovo": [
+        {
+            "titulo": "",
+            "img": "blognovo/blogonovo_logo_dnaielinacio.com.png",
+            "descricao_img": "Blognovo.net - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Blog de entretenimento."
+        }
+    ],
+    "zoomdesign": [
+        {
+            "titulo": "",
+            "img": "zoomdesign/logo_zoomdesign_danielinacio.com.png",
+            "descricao_img": "ZoomDesign - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Comunicação Visual."
+        }
+    ],
+    "prevsimples": [
+        {
+            "titulo": "",
+            "img": "prevsimples/logo_prevsimples_danielinacio.com.png",
+            "descricao_img": "PrevSimples - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Consultoria e assistência a previdência social."
+        }
+    ],
+    "gamadiesel": [
+        {
+            "titulo": "",
+            "img": "gamadiesel/logo_gamadiesel_danielinacio.com.png",
+            "descricao_img": "GamaDiesel - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"A empresa Gama Diesel é especializada em venda manutenção bombas injetoras e fica localizada na cidade de Formiga MG."
+        }
+    ],
+    "marceloveiculos": [
+        {
+            "titulo": "",
+            "img": "marceloveiculos/site_marceloveiculos_formiga_danielinacio.com.png",
+            "descricao_img": "Marcelo Veículos - Site www.marceloveiculosformiga.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"A empresa Marcelo Veículos é uma revendedora e de veículos novos e usados."
+           
+        }
+    ]
+}

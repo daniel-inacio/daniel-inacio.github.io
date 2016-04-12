@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+        <title>Ziceinclude&trade; admin version 1.7 online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Link shortcut icon-->
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> 
+
+        <!-- CSS Stylesheet-->
+        <link type="text/css" rel="stylesheet" href="components/bootstrap/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="components/bootstrap/bootstrap-responsive.css" />
+        <link type="text/css" rel="stylesheet" href="css/zice.style.css" />
+
+		
+        <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="components/flot/excanvas.min.js"></script><![endif]-->  
+		
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="components/ui/jquery.ui.min.js"></script> 
+		<script type="text/javascript" src="components/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="components/ui/timepicker.js"></script>
+        <script type="text/javascript" src="components/colorpicker/js/colorpicker.js"></script>
+        <script type="text/javascript" src="components/form/form.js"></script>
+        <script type="text/javascript" src="components/elfinder/js/elfinder.full.js"></script>
+        <script type="text/javascript" src="components/datatables/dataTables.min.js"></script>
+        <script type="text/javascript" src="components/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="components/jscrollpane/jscrollpane.min.js"></script>
+        <script type="text/javascript" src="components/editor/jquery.cleditor.js"></script>
+        <script type="text/javascript" src="components/chosen/chosen.js"></script>
+        <script type="text/javascript" src="components/validationEngine/jquery.validationEngine.js"></script>
+        <script type="text/javascript" src="components/validationEngine/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="components/fullcalendar/fullcalendar.js"></script>
+        <script type="text/javascript" src="components/flot/flot.js"></script>
+        <script type="text/javascript" src="components/uploadify/uploadify.js"></script>       
+		<script type="text/javascript" src="components/Jcrop/jquery.Jcrop.js"></script>
+		<script type="text/javascript" src="components/smartWizard/jquery.smartWizard.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/zice.custom.js"></script>
+        
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>        
+        <body>        
+        
+            <!-- Header -->
+            <div id="header">
+                <ul id="account_info" class="pull-right"> 
+                    <li><img src="images/avatar.png" alt="Online" /></li>
+                    <li class="setting">
+                        Welcome, <b class="red">John Doe</b>
+                        <ul class="subnav">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Reset password</a></li>
+                            <br class="clearfix" />
+                        </ul>
+                    </li>
+                    <li class="logout" title="Disconnect">Logout</li> 
+                </ul>
+            </div><!-- End Header -->
+
+              <!-- left_menu -->
+              <div id="left_menu">
+                    <ul id="main_menu" class="main_menu">
+                      <li><a href="dashboard.html"><span class="ico gray shadow home"></span><b>Dashboard</b></a></li>
+                      <li><a href="#"><span class="ico gray shadow window"></span><b>Form elements</b></a>
+                        <ul>
+                          <li><a href="form.html"> basic form </a></li>
+                          <li><a href="vform.html"> validation </a></li>
+                          <li><a href="wizard.html"> wizard </a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><span class="ico gray  dimensions"></span><b>Sample pages</b></a>
+                        <ul>
+                          <li><a href="profile.html"> Profile setting </a></li>
+                          <li><a href="conversation.html"> conversation</a></li>
+                          <li><a href="imagesEditor.html"> Images Editor </a></li>
+                          <li><a href="barcode.html"> barcode </a></li>
+                          <li><a href="messages.html"> messages </a></li>
+                          <li><a href="grid.html"> Grid System </a></li>
+                        </ul>
+                      </li>
+					  <li><a href="ajax.html"><span class="ico gray shadow   encrypt"></span><b>Sample ajax</b> </a></li>
+                      <li><a href="table.html"><span class="ico gray shadow  spreadsheet"></span><b>Tables</b> </a></li>
+                      <li><a href="gallery.html"><span class="ico gray shadow pictures_folder"></span><b>Gallery </b></a></li>
+                      <li class="select"><a href="#"><span class="ico gray shadow stats_lines"></span><b>Graph and Charts</b> </a>
+                        <ul>
+                          <li><a href="modalchartLive.html" class="pop_box">live chart </a></li>
+                          <li><a href="chart.html">all chart</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="filemanager.html"><span class="ico gray shadow  file"></span><b>File manager </b></a></li>
+                      <li><a href="calendar.html"><span class="ico gray shadow calendar"></span><b>Calendar </b></a></li>
+                      <li><a href="typography.html"><span class="ico gray  shadow paragraph_align_left"></span><b>Typography</b></a></li>
+                      <li><a href="inelement.html"><span class="ico gray shadow abacus"></span><b>Interface elements </b></a></li>
+                      <li><a href="map.html"><span class="ico gray shadow  location"></span><b>Map location </b></a></li>
+                      <li><a href="icon.html"><span class="ico gray  shadow satellite"></span><b>Icon and Button </b></a></li>
+					  <li><a href="404.html"><span class="ico gray  shadow firewall"></span><b>Error Pages</b></a></li>
+                    </ul>
+               </div>
+
+            
+              <div id="content">
+                <div class="inner">
+                                    
+                    <div class="row-fluid">
+                          <div class="span12 clearfix">
+                              <div class="logo"></div>
+                              <ul id="shortcut" class="clearfix">
+                                    <li> <a href="#" title="Back To home"> <img src="images/icon/shortcut/home.png" alt="home" /><strong>Home</strong> </a> </li>
+                                    <li> <a href="#" title="Website Graph"> <img src="images/icon/shortcut/graph.png" alt="graph" /><strong>Graph</strong> </a> </li>
+                                    <li> <a href="#" title="Setting"> <img src="images/icon/shortcut/setting.png" alt="setting" /><strong>Setting</strong></a> </li> 
+                                    <li> <a href="#" title="Messages"> <img src="images/icon/shortcut/mail.png" alt="messages" /><strong>Message</strong></a><div class="notification">10</div></li>
+                              </ul>
+                          </div>
+                    </div>
+                    
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span6 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-home"></i> Pie Chart </span>
+                                </div><!-- End widget-header -->	
+                                <div class="widget-content"><br />
+
+                                <table class="chart-pie">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th style="color : #aed741;">Product Review</th>
+                                            <th style="color : #bedd17;">Webboard</th>
+                                            <th style="color : #c3e171;">Article</th>
+                                            <th style="color : #85b501;">Other</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th></th>
+                                            <td>75</td>
+                                            <td>10</td>
+                                            <td>9</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="chart-pie-shadow"></div>
+                                <div class="chart_title"><span>Pages is popular  in your web</span></div>
+                                </div><!--  end widget-content -->
+                                
+                            </div><!-- widget  span6 clearfix-->
+                            <div class="widget  span6 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-home"></i> Line Chart  </span>
+                                </div><!-- End widget-header -->	
+                                <div class="widget-content"><br />
+
+                                    <table class="chart2" style="width : 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th width="10%"></th>
+                                                <th width="25%" style="color : #bedd17;">Demo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>700</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <td>650</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <td>400</td>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <td>650</td>
+                                            </tr>
+                                            <tr>
+                                                <th>6</th>
+                                                <td>750</td>
+                                            </tr>
+                                            <tr>
+                                                <th>7</th>
+                                                <td>550</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+									<br />
+									<div class="chart_title"><span>Pages is Visitor in your web</span></div>
+                                </div><!--  end widget-content -->
+                                
+                            </div><!-- widget  span6 clearfix-->
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                            
+                            <div class="widget span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-align-center"></i> Line and bar Charts </span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                        
+                                <!--Start UITab-->
+                                <div id="UITab">
+                                    <ul class="tabs">
+                                        <li><a href="#tab1"> line   Chat</a></li>       
+                                        <li><a href="#tab2"> bar  Chat  </a></li>         
+                                  </ul>
+                                  <div class="tab_container">
+                                            <div id="tab1" class="tab_content"> 
+                                                <ul class="uibutton-group">
+                                                      <li><a class="btn pop_box" href="modalchartLive.html">Live  Chart</a></li>    
+                                                </ul><br />
+
+                                              <table class="chart-line"> 
+                                              <thead>
+                                                <tr>
+                                                    <th width="10%"></th>
+                                                    <th width="29%" style="color : #dc5f59;"> Visitors</th>
+                                                    <th width="25%" style="color : #bedd17;">Demo</th>
+                                                    <th width="36%" style="color : #4d90fe;">Pageviews</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>450</td>
+                                                    <td>685</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>450</td>
+                                                    <td>750</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <td>450</td>
+                                                    <td>790</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <td>450</td>
+                                                    <td>800</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>5</th>
+                                                    <td>450</td>
+                                                    <td>790</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>6</th>
+                                                    <td>450</td>
+                                                    <td>750</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>7</th>
+                                                    <td>450</td>
+                                                    <td>650</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>8</th>
+                                                    <td>450</td>
+                                                    <td>520</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>9</th>
+                                                    <td>450</td>
+                                                    <td>400</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10</th>
+                                                    <td>450</td>
+                                                    <td>270</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>11</th>
+                                                    <td>450</td>
+                                                    <td>140</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>12</th>
+                                                    <td>450</td>
+                                                    <td>75</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>13</th>
+                                                    <td>450</td>
+                                                    <td>60</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>14</th>
+                                                    <td>450</td>
+                                                    <td>75</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>15</th>
+                                                    <td>450</td>
+                                                    <td>140</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>16</th>
+                                                    <td>450</td>
+                                                    <td>270</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>17</th>
+                                                    <td>450</td>
+                                                    <td>400</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>18</th>
+                                                    <td>450</td>
+                                                    <td>520</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>19</th>
+                                                    <td>450</td>
+                                                    <td>650</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>20</th>
+                                                    <td>450</td>
+                                                    <td>750</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>21</th>
+                                                    <td>600</td>
+                                                    <td>790</td>
+                                                    <td>300</td>
+                                                </tr>
+                                            </tbody>
+                                        </table><br />
+                                        </div><!--tab1-->
+                                        <div id="tab2" class="tab_content"> <br />
+
+                                        <table class="chart-bar"> 
+                                        <thead>
+                                          <tr>
+                                              <th width="10%"></th>
+                                              <th width="29%" style="color : #dc5f59;"> Visitors</th>
+                                              <th width="25%" style="color : #bedd17;">Demo</th>
+                                              <th width="36%" style="color : #4d90fe;">Pageviews</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th>1</th>
+                                              <td>450</td>
+                                              <td>685</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>2</th>
+                                              <td>450</td>
+                                              <td>750</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>3</th>
+                                              <td>450</td>
+                                              <td>790</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>4</th>
+                                              <td>450</td>
+                                              <td>800</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>5</th>
+                                              <td>450</td>
+                                              <td>790</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>6</th>
+                                              <td>450</td>
+                                              <td>750</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>7</th>
+                                              <td>450</td>
+                                              <td>650</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>8</th>
+                                              <td>450</td>
+                                              <td>520</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>9</th>
+                                              <td>450</td>
+                                              <td>400</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>10</th>
+                                              <td>450</td>
+                                              <td>270</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>11</th>
+                                              <td>450</td>
+                                              <td>140</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>12</th>
+                                              <td>450</td>
+                                              <td>75</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>13</th>
+                                              <td>450</td>
+                                              <td>60</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>14</th>
+                                              <td>450</td>
+                                              <td>75</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>15</th>
+                                              <td>450</td>
+                                              <td>140</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>16</th>
+                                              <td>450</td>
+                                              <td>270</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>17</th>
+                                              <td>450</td>
+                                              <td>400</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>18</th>
+                                              <td>450</td>
+                                              <td>520</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>19</th>
+                                              <td>450</td>
+                                              <td>650</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>20</th>
+                                              <td>450</td>
+                                              <td>750</td>
+                                              <td>300</td>
+                                          </tr>
+                                          <tr>
+                                              <th>21</th>
+                                              <td>600</td>
+                                              <td>790</td>
+                                              <td>300</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                 </div><!--tab2-->
+                                        
+                                </div><!-- end tab_container-->
+                                </div><!--END UITab-->
+                          
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+                            
+                    </div><!-- row-fluid -->
+
+
+                    <div id="footer"> &copy; Copyright 2012 <span class="tip"><a href="#" title="Zice Admin">Your Company Name</a> </span> </div>
+                    
+                </div> <!--// End inner -->
+              </div> <!--// End ID content --> 
+
+        
+        </body>
+        </html>

@@ -1,0 +1,77 @@
+<script type="text/javascript">
+$(document).ready(function(){		
+	$('.preview_').jScrollPane({ autoReinitialise: true });		 
+	$('.icon a ').tipsy({gravity: 'ne',live: true});		
+	$(".reply").live('click',function(){
+				loading('Loading');		
+				var frw =$(this).attr('rel');
+				$(".loadMsgOpen").hide();
+				$(".loadMsg").load('modalAnsmessages.html',function(){ 
+								 $('#preloader').fadeOut();
+								 $(".modal_dialog .content").css({ 'background-color': '#eeeeee' }); 
+								setTimeout("$.fancybox.resize();",500);  	
+				 });
+				$.fancybox.resize();				
+	})
+
+})								 
+</script> 
+<style type="text/css">
+.msgOhead {
+	background-color:#f9f9f9; padding:10px 20px 7px 20px;
+	border:2px #FFF solid;
+}
+.msgOhead > div{
+	padding:5px 0 0px 0;
+}
+.msgOhead .icon{
+	margin:0px  0px 0px 5px;
+}
+</style>  
+<div class="modal_dialog" style="min-height:600px; width:747px">
+  <div class="header"><span>READ_MESSAGE</span>
+      <div class="close_me pull-right"><a href="javascript:void(0)" id="close_windows" class="butAcc"><img src="images/icon/closeme.png" /></a></div>
+ </div>
+ 
+  <div class="content" style="background-color:#FFF">
+    <div class="loadMsgOpen">
+        <div style="float:left; width:60%;"><b>Zicedemo@demo.com</b></div>
+          <div style="float:right;width:40%;" align="right">
+        <ul class="uibutton-group">
+                  <li><a class="uibutton  icon answer normal reply" rel="0">Answer</a> </li>
+                  <li><a class="uibutton  icon forward normal reply" rel="1">Forward</a></li>
+            </ul>
+    </div>
+    
+   			  <div class="clear"></div>
+              <div style="border: 1px #CCC solid; margin-top:5px">
+              <div class="msgOhead">
+                      <div style="float:left; width:60%;"><strong>From :</strong> <font color="#AAA">Zicedemo@demo.com</font>
+                      <a class="addcontact">Add  contact </a>
+                    </div>
+                      <div style="float:right;width:40%;" align="right"><font color="#AAA"> 04/09/2012</font>
+                            <span class="icon ">
+                                <a title="Print" href="#" class="btnPrint">
+                                <img src="images/icon/print.png" width="14" height="12" /></a>
+                            </span>
+                            <span class="icon"> 
+                                <a title="New  Window" href="#">
+                                <img src="images/icon/link.png" width="12" height="12" /></a>
+                            </span>
+                            
+                      </div>
+                      <div class="clear"></div>
+                      <div style="float:left; width:60%;"><strong>Topic :</strong><font color="#AAA"> Zice  Admin Theme </font></div>
+              <div class="clear"></div>
+              </div>
+              </div>
+              <div class="preview_" style=" padding:0px 20px 20px 0px ; height:400px; margin: 10px 0px 20px 20px; ">
+                <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+              </div>
+    </div><!--// loadMsgOpen-->
+    <div class="loadMsg"></div><!--// loadMsg-->
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<script>
+
+$(function(){
+
+	$(document).click( function(){ colorize() } );
+	colorize();
+
+	});
+
+
+var swapColors = true;
+function colorize() {
+
+	var Palette = top.ColorSchemeDesigner.getPalette();
+	swapColors = !swapColors;
+
+	var pri = [], sec1 = [], sec2 = [], compl = [];
+	for (var i=0;i<5;i++) {
+		pri[i] = Palette.Primary.Col[i].RGB.getCSS();
+		if (Palette.Compl) compl[i] = Palette.Compl.Col[i].RGB.getCSS();
+		if (Palette.Sec1) {
+			if (swapColors) {
+				sec1[i] = Palette.Sec2.Col[i].RGB.getCSS();
+				sec2[i] = Palette.Sec1.Col[i].RGB.getCSS();
+				}
+			else {
+				sec1[i] = Palette.Sec1.Col[i].RGB.getCSS();
+				sec2[i] = Palette.Sec2.Col[i].RGB.getCSS();
+				}
+			}
+		}		
+
+	var p0 = pri[4], p1 = pri[3], p2 = pri[2], p3 = pri[1], p4 = pri[0];
+
+	var c0, c1, c2;
+	if (Palette.Compl) { c0 = compl[2]; c1 = compl[4]; c2 = compl[0] }
+	else { c0 = p4; c1 = p2; c2 = p0 }
+
+	var sa0, sa1, sa2;
+	if (Palette.Sec1) { c0 = compl[2]; c1 = compl[4]; c2 = compl[0] }
+	else { sa0 = p4; sa1 = p2; sa2 = p0 }
+
+	var sb0, sb1, sb2;
+	if (Palette.Sec2) { c0 = compl[2]; c1 = compl[4]; c2 = compl[0] }
+	else { sb0 = p4; sb1 = p2; sb2 = p0 }
+
+
+	$('#topbg').css('background',p4).css('opacity',0.5);
+	$('#header').css('background',p2);
+	$('#hdr-box1').css('background',p0);
+	$('#hdr-box2').css('background',p3);
+	$('#hdr-box3').css('background',p2);
+	$('#hdr-box4').css('background',p1);
+
+	$('#menu a').not('.sel')
+	.mouseout(  function(){ $(this).css('background',sa1).css('color',sa2) } )
+	.mouseover( function(){ $(this).css('background',sa2).css('color',sa1) } ).trigger('mouseout');
+	$('#menu a.sel').css('background',sa2).css('color',sa1);
+	$('#menu a span').css('background',sa0);
+
+	$('#content').css('background','white');
+
+	$('#left').css('border-color',p4);
+	$('#content a')
+	.mouseout(  function(){ $(this).css('background','transparent').css('color',p0) } )
+	.mouseover( function(){ $(this).css('background',c2).css('color',c0) } ).trigger('mouseout');
+	$('#content .ttl').css('color',sb0);
+
+	$('#ico').css('background',p0);
+	$('#left ul').css('color',sb0);
+
+	$('#right h3 span').css('background',sb1).css('border-color',sb2);
+
+	$('#rbox').css('background',sb1).css('color',sb2);
+	$('#rbox span').css('background',sb0);
+
+	$('#right button').css('border-color',c1)
+	.mouseout(  function(){ $(this).css('background',c0).css('color',c2) } )
+	.mouseover(  function(){ $(this).css('background',c2).css('color',c0) } ).trigger('mouseout');
+	
+	$('#footer').css('background',sa1).css('color',sa2).css('border-color',sa0);
+	$('#footer a')
+	.mouseout(  function(){ $(this).css('background','transparent').css('color',sa2) } )
+	.mouseover( function(){ $(this).css('background',c2).css('color',c0) } ).trigger('mouseout');
+
+	}
+
+</script>

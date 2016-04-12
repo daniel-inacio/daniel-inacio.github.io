@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+        <title>Ziceinclude&trade; admin version 1.7 online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Link shortcut icon-->
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> 
+
+        <!-- CSS Stylesheet-->
+        <link type="text/css" rel="stylesheet" href="components/bootstrap/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="components/bootstrap/bootstrap-responsive.css" />
+        <link type="text/css" rel="stylesheet" href="css/zice.style.css" />
+
+		
+        <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="components/flot/excanvas.min.js"></script><![endif]-->  
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="components/ui/jquery.ui.min.js"></script> 
+        <script type="text/javascript" src="components/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="components/ui/timepicker.js"></script>
+        <script type="text/javascript" src="components/colorpicker/js/colorpicker.js"></script>
+        <script type="text/javascript" src="components/form/form.js"></script>
+        <script type="text/javascript" src="components/elfinder/js/elfinder.full.js"></script>
+        <script type="text/javascript" src="components/datatables/dataTables.min.js"></script>
+        <script type="text/javascript" src="components/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="components/jscrollpane/jscrollpane.min.js"></script>
+        <script type="text/javascript" src="components/editor/jquery.cleditor.js"></script>
+        <script type="text/javascript" src="components/chosen/chosen.js"></script>
+        <script type="text/javascript" src="components/validationEngine/jquery.validationEngine.js"></script>
+        <script type="text/javascript" src="components/validationEngine/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="components/fullcalendar/fullcalendar.js"></script>
+        <script type="text/javascript" src="components/flot/flot.js"></script>
+        <script type="text/javascript" src="components/uploadify/uploadify.js"></script>       
+        <script type="text/javascript" src="components/Jcrop/jquery.Jcrop.js"></script>
+        <script type="text/javascript" src="components/smartWizard/jquery.smartWizard.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/zice.custom.js"></script>
+
+		<script type="text/javascript">
+        $(function() {
+            $('#text-search').bind('keyup change', function(ev) {
+                var searchTerm = $(this).val();
+                $('.text-search-data').removeHighlight();
+                if ( searchTerm ) {
+                    $('.text-search-data').highlight( searchTerm );
+                }
+            });
+        });
+        </script>
+        
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>        
+        <body>        
+        
+            <!-- Header -->
+            <div id="header">
+                <ul id="account_info" class="pull-right"> 
+                    <li><img src="images/avatar.png" alt="Online" /></li>
+                    <li class="setting">
+                        Welcome, <b class="red">John Doe</b>
+                        <ul class="subnav">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Reset password</a></li>
+                            <br class="clearfix" />
+                        </ul>
+                    </li>
+                    <li class="logout" title="Disconnect">Logout</li> 
+                </ul>
+            </div><!-- End Header -->
+
+              <!-- left_menu -->
+              <div id="left_menu">
+                    <ul id="main_menu" class="main_menu">
+                      <li><a href="dashboard.html"><span class="ico gray shadow home"></span><b>Dashboard</b></a></li>
+                      <li><a href="#"><span class="ico gray shadow window"></span><b>Form elements</b></a>
+                        <ul>
+                          <li><a href="form.html"> basic form </a></li>
+                          <li><a href="vform.html"> validation </a></li>
+                          <li><a href="wizard.html"> wizard </a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><span class="ico gray  dimensions"></span><b>Sample pages</b></a>
+                        <ul>
+                          <li><a href="profile.html"> Profile setting </a></li>
+                          <li><a href="conversation.html"> conversation</a></li>
+                          <li><a href="imagesEditor.html"> Images Editor </a></li>
+                          <li><a href="barcode.html"> barcode </a></li>
+                          <li><a href="messages.html"> messages </a></li>
+                          <li><a href="grid.html"> Grid System </a></li>
+                        </ul>
+                      </li>
+					  <li><a href="ajax.html"><span class="ico gray shadow   encrypt"></span><b>Sample ajax</b> </a></li>
+                      <li><a href="table.html"><span class="ico gray shadow  spreadsheet"></span><b>Tables</b> </a></li>
+                      <li><a href="gallery.html"><span class="ico gray shadow pictures_folder"></span><b>Gallery </b></a></li>
+                      <li><a href="#"><span class="ico gray shadow stats_lines"></span><b>Graph and Charts</b> </a>
+                        <ul>
+                          <li><a href="modalchartLive.html" class="pop_box">live chart </a></li>
+                          <li><a href="chart.html">all chart</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="filemanager.html"><span class="ico gray shadow  file"></span><b>File manager </b></a></li>
+                      <li><a href="calendar.html"><span class="ico gray shadow calendar"></span><b>Calendar </b></a></li>
+                      <li class="select"><a href="typography.html"><span class="ico gray  shadow paragraph_align_left"></span><b>Typography</b></a></li>
+                      <li><a href="inelement.html"><span class="ico gray shadow abacus"></span><b>Interface elements </b></a></li>
+                      <li><a href="map.html"><span class="ico gray shadow  location"></span><b>Map location </b></a></li>
+                      <li><a href="icon.html"><span class="ico gray  shadow satellite"></span><b>Icon and Button </b></a></li>
+					  <li><a href="404.html"><span class="ico gray  shadow firewall"></span><b>Error Pages</b></a></li>
+                    </ul>
+               </div>
+
+            
+              <div id="content">
+                <div class="inner">
+                                    
+                    <div class="row-fluid">
+                          <div class="span12 clearfix">
+                              <div class="logo"></div>
+                              <ul id="shortcut" class="clearfix">
+                                    <li> <a href="#" title="Back To home"> <img src="images/icon/shortcut/home.png" alt="home" /><strong>Home</strong> </a> </li>
+                                    <li> <a href="#" title="Website Graph"> <img src="images/icon/shortcut/graph.png" alt="graph" /><strong>Graph</strong> </a> </li>
+                                    <li> <a href="#" title="Setting"> <img src="images/icon/shortcut/setting.png" alt="setting" /><strong>Setting</strong></a> </li> 
+                                    <li> <a href="#" title="Messages"> <img src="images/icon/shortcut/mail.png" alt="messages" /><strong>Message</strong></a><div class="notification">10</div></li>
+                              </ul>
+                          </div>
+                    </div>       
+    
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-indent-left"></i>  Typography</span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                      <div class="boxtitle"><span class="ico gray font_size"></span> Search text  with color Highlight</div>
+                                      <form id="demo" /> 
+                                            <div class="section ">
+                                                <label> Search text <small>High Light</small></label>   
+                                                <div><input type="text" id="text-search" placeholder="Text Search" class=" medium" /></div>
+                                           </div>
+                                            <div class="section ">
+                                                <label>  Text Data<small>Contant</small></label>   
+                                                <div>
+                                          <p class="text-search-data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+                                                </div>
+                                           </div>
+                                        </form>
+                                        
+                          <div class="row-fluid">
+                          		<div class="span4"><h1>Tag Heading 1</h1></div>
+                                <div class="span4"><h2>Tag Heading 2</h2></div>
+                                <div class="span4"><h3>Tag Heading 3</h3></div>
+                          </div>
+                          <div class="row-fluid">
+                          		<div class="span4"><h4>Tag Heading 4</h4></div>
+                                <div class="span4"><h5>Tag Heading 5</h5></div>
+                                <div class="span4"><h6>Tag Heading 6</h6></div>
+                          </div>
+                          <hr />
+
+                          <h3>list stlye</h3>
+                          
+                          <!-- row-fluid -->
+                          <div class="row-fluid">
+                              <div class="span6">
+                                  <ul class="list_arrow">
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                  </ul>
+                            </div>
+                            
+                              <div class="span6">
+                                  <ul class="list_arrow2">
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                      <li>List item</li>
+                                  </ul>
+                              </div>
+                              
+                          </div><!-- end row-fluid  -->
+                          
+                          <div class="row-fluid">
+                              <div class="span6">
+                                  <ol class="rounded-list">
+                                      <li><a href="">List item</a></li>
+                                      <li><a href="">List item</a></li>
+                                      <li><a href="">List item</a>
+                                          <ol>
+                                            </ol></li><li><a href="">List sub item</a></li>
+                                              <li><a href="">List sub item</a></li>
+                                              <li><a href="">List sub item</a></li>
+                                        
+                                    
+                                      <li><a href="">List item</a></li>
+                                      <li><a href="">List item</a></li>						
+                                  
+                            </ol></div>
+                              <div class="span6">
+                                  <ol class="rectangle-list">
+                                      <li><a href="">List item</a></li>
+                                      <li><a href="">List item</a></li>
+                                      <li><a href="">List item</a>
+                                          <ol>
+                                            </ol></li><li><a href="">List sub item</a></li>
+                                              <li><a href="">List sub item</a></li>
+                                              <li><a href="">List sub item</a></li>
+                                        
+                                    
+                                      <li><a href="">List item</a></li>
+                                      <li><a href="">List item</a></li>			
+                                  
+                              </ol></div>
+                              </div><!-- end row-fluid  -->
+                                  
+                        
+                          <h3>overflow stlye</h3>
+                          <div class="overflow" style="height:300px">
+<pre class="showCodeJS">
+$.fn.imgdata = function(key){
+    return this.find('.dataImg li:eq('+key+')').text();
+}
+$.fn.hdata = function(key){
+    return this.find('.dataSet li:eq('+key+')').text();
+}
+var buttonActions = {
+    'hide_menu':function(){
+        $('#hide_menu').hide();			   
+        $('#left_menu').animate({ left: "-213px" }, 200 );
+        $('#show_menu').show();
+        $('#content').animate({ marginLeft: "40px" }, 200 );
+        $('#wysiwyg').css('width', '97%');
+    },	
+      'show_menu':function(){			   
+          $(this).hide();			
+          $('#hide_menu').show();
+          $('#left_menu').animate({ left: "0px" }, 200 );
+          $('#content').animate({ marginLeft: "240px" }, 200 );
+          $('#wysiwyg').css('width', '233px');
+    },
+      'close_windows':function(){
+          $.fancybox.close(); 
+          ResetForm();
+    }
+    
+}</pre>
+                          </div>
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div id="footer"> &copy; Copyright 2012 <span class="tip"><a href="#" title="Zice Admin">Your Company Name</a> </span> </div>
+
+                </div> <!--// End inner -->
+              </div> <!--// End content --> 
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".chzn-select").chosen(); 
+	// on click callback
+	$('#open_icon,#open_icon2,#open_icon3').click(function(){	
+		  var callback=$(this).attr('id');
+		  var type=$(this).attr('title');
+		   var input=$(this).attr('rel');
+		  fileDialogCallback(callback,type,input);					   
+	});
+	$("#msg").cleditor().focus().show();	
+	$(".p_close").click( function(){
+								  
+					$(".loadMsg").html('');  
+					$(".loadMsgOpen").show();
+					$(".modal_dialog .content").css({ 'background-color': '#ffffff' });
+					setTimeout("$.fancybox.resize();",500);  
+								  
+	 });
+
+});		 
+</script>
+<style type="text/css">
+<!--
+.cleditorMain {
+		border:0px solid #CCC;
+		padding:0px 0px 0px 0px;
+		background-color:#eeeeee;
+		margin-top:7px;
+		margin-bottom: 0px;	
+}
+.line {
+	border-bottom: 1px #ffffff solid;
+	border-top: 1px #cccccc solid;
+	margin-top: -5px;
+	margin-bottom: 10px;
+}
+.section2{
+	margin-bottom:10px;
+	
+	}
+-->
+</style>
+
+<form id="send_email" />
+<div class="section2 ">
+            <label class="f_help"><font color="#333333" style="text-transform:uppercase"> Topic </font> </label>
+        <div>
+          <input type="text" name="topic" id="topic" class="validate[required] " style="width:681px" value="RE: Zice Admin Theme" />
+        </div>
+</div>
+<div class="section2 ">
+            <label class="f_help"><font color="#333333" style="text-transform:uppercase">To Name </font></label>
+        <div>
+          <select name="email[]" class="chzn-select" multiple="">
+              <option value="zice@demo.com" selected="selected" />zice@demo.com
+          </select> 
+        </div>
+</div>
+
+      <label class="f_help"><font color="#333333" style="text-transform:uppercase"> attach file</font></label>
+   	<div><input type="text" name="attach" id="attach" class="medium" /><a id="open_icon" title="icon" rel="attach">open</a></div>
+
+<textarea name="msg" id="msg">
+
+ <br />--------------------------------------------------------------------------------<br />
+From: zice@demo.com<br />
+To: test@demo.com<br />
+Subject: Zice Admin Theme<br />
+Date: 04/09/2012<br />
+<br /><br />
+                            <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+                                                        
+                                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo convallis nibh tristique commodo. Cras tincidunt hendrerit pharetra. Etiam erat magna, egestas sed placerat at, congue sed nisi. Nullam eget varius leo. Integer at justo a velit imperdiet pulvinar. Sed magna mi, sodales sit amet aliquet ac, eleifend eget sem. Nam ipsum lectus, fringilla sed rutrum ac, tempus in orci. Pellentesque condimentum dui a elit rutrum at posuere tellus dignissim. Aliquam erat volutpat. Suspendisse potenti. Sed convallis convallis tellus, id volutpat leo euismod in. Curabitur dapibus commodo vehicula. Nullam varius, lacus at porta pellentesque, dolor massa rutrum lorem, vehicula dapibus dui erat nec mi. Donec condimentum lectus ut ligula condimentum et luctus orci pharetra. Fusce semper tempor dui, vitae sollicitudin mauris volutpat in. Aliquam erat volutpat.</p>
+                                                                                    
+                                                                                    </textarea>
+      <div class="line"></div>
+        <div style="float:left; width:50%;">
+              <ul class="uibutton-group">
+                    <li><a class="uibutton  icon normal answer reply ">Answer</a> </li>
+                    <li><a class="uibutton  icon normal forward reply">Forward</a></li>
+              </ul>
+        </div>
+        <div style="float:right;width:50%;" align="right">
+            <ul class="uibutton-group">
+                    <li><a class="uibutton loading" title="Sending" rel="1">Sending</a> </li>
+                    <li><a class="uibutton  special p_close">cancel</a></li>
+            </ul>
+        </div>
+    <div class="clear"></div>
+</form>

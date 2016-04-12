@@ -1,0 +1,15 @@
+body{
+    margin:0px;
+    padding:80px;
+    margin-top:10px;
+    font-family: 'arial',sans-serif;
+}
+
+.invalid{
+    border:1px solid red !important;
+}
+label
+{
+    display: block;
+}
+

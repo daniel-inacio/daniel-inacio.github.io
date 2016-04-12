@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+        <title>Ziceinclude&trade; admin version 1.7 online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Link shortcut icon-->
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> 
+
+        <!-- CSS Stylesheet-->
+        <link type="text/css" rel="stylesheet" href="components/bootstrap/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="components/bootstrap/bootstrap-responsive.css" />
+        <link type="text/css" rel="stylesheet" href="css/zice.style.css" />
+
+		
+        <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="components/flot/excanvas.min.js"></script><![endif]-->  
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="components/ui/jquery.ui.min.js"></script> 
+        <script type="text/javascript" src="components/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="components/ui/timepicker.js"></script>
+        <script type="text/javascript" src="components/colorpicker/js/colorpicker.js"></script>
+        <script type="text/javascript" src="components/form/form.js"></script>
+        <script type="text/javascript" src="components/elfinder/js/elfinder.full.js"></script>
+        <script type="text/javascript" src="components/datatables/dataTables.min.js"></script>
+        <script type="text/javascript" src="components/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="components/jscrollpane/jscrollpane.min.js"></script>
+        <script type="text/javascript" src="components/editor/jquery.cleditor.js"></script>
+        <script type="text/javascript" src="components/chosen/chosen.js"></script>
+        <script type="text/javascript" src="components/validationEngine/jquery.validationEngine.js"></script>
+        <script type="text/javascript" src="components/validationEngine/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="components/fullcalendar/fullcalendar.js"></script>
+        <script type="text/javascript" src="components/flot/flot.js"></script>
+        <script type="text/javascript" src="components/uploadify/uploadify.js"></script>       
+        <script type="text/javascript" src="components/Jcrop/jquery.Jcrop.js"></script>
+        <script type="text/javascript" src="components/smartWizard/jquery.smartWizard.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/zice.custom.js"></script>
+        <script>
+		$(document).ready(function() {
+			// Form Cloning 
+			var sheepItForm = $('#cloneForm').sheepIt({
+				separator: '',
+				allowRemoveLast: true,
+				allowRemoveCurrent: true,
+				allowRemoveAll: true,
+				allowAdd: true,
+				maxFormsCount: 10,
+				minFormsCount: 0,
+				iniFormsCount: 2
+			});
+		});
+		</script>
+        
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>        
+        <body>        
+        
+            <!-- Header -->
+            <div id="header">
+                <ul id="account_info" class="pull-right"> 
+                    <li><img src="images/avatar.png" alt="Online" /></li>
+                    <li class="setting">
+                        Welcome, <b class="red">John Doe</b>
+                        <ul class="subnav">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Reset password</a></li>
+                            <br class="clearfix" />
+                        </ul>
+                    </li>
+                    <li class="logout" title="Disconnect">Logout</li> 
+                </ul>
+            </div><!-- End Header -->
+
+              <!-- left_menu -->
+              <div id="left_menu">
+                    <ul id="main_menu" class="main_menu">
+                      <li><a href="dashboard.html"><span class="ico gray shadow home"></span><b>Dashboard</b></a></li>
+                      <li class="select"><a href="#"><span class="ico gray shadow window"></span><b>Form elements</b></a>
+                        <ul>
+                          <li><a href="form.html"> basic form </a></li>
+                          <li><a href="vform.html"> validation </a></li>
+                          <li><a href="wizard.html"> wizard </a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><span class="ico gray  dimensions"></span><b>Sample pages</b></a>
+                        <ul>
+                          <li><a href="profile.html"> Profile setting </a></li>
+                          <li><a href="conversation.html"> conversation</a></li>
+                          <li><a href="imagesEditor.html"> Images Editor </a></li>
+                          <li><a href="barcode.html"> barcode </a></li>
+                          <li><a href="messages.html"> messages </a></li>
+                          <li><a href="grid.html"> Grid System </a></li>
+                        </ul>
+                      </li>
+					  <li><a href="ajax.html"><span class="ico gray shadow   encrypt"></span><b>Sample ajax</b> </a></li>
+                      <li><a href="table.html"><span class="ico gray shadow  spreadsheet"></span><b>Tables</b> </a></li>
+                      <li><a href="gallery.html"><span class="ico gray shadow pictures_folder"></span><b>Gallery </b></a></li>
+                      <li><a href="#"><span class="ico gray shadow stats_lines"></span><b>Graph and Charts</b> </a>
+                        <ul>
+                          <li><a href="modalchartLive.html" class="pop_box">live chart </a></li>
+                          <li><a href="chart.html">all chart</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="filemanager.html"><span class="ico gray shadow  file"></span><b>File manager </b></a></li>
+                      <li><a href="calendar.html"><span class="ico gray shadow calendar"></span><b>Calendar </b></a></li>
+                      <li><a href="typography.html"><span class="ico gray  shadow paragraph_align_left"></span><b>Typography</b></a></li>
+                      <li><a href="inelement.html"><span class="ico gray shadow abacus"></span><b>Interface elements </b></a></li>
+                      <li><a href="map.html"><span class="ico gray shadow  location"></span><b>Map location </b></a></li>
+                      <li><a href="icon.html"><span class="ico gray  shadow satellite"></span><b>Icon and Button </b></a></li>
+					  <li><a href="404.html"><span class="ico gray  shadow firewall"></span><b>Error Pages</b></a></li>
+                    </ul>
+               </div>
+
+            
+              <div id="content">
+                <div class="inner">
+                                    
+                    <div class="row-fluid">
+                          <div class="span12 clearfix">
+                              <div class="logo"></div>
+                              <ul id="shortcut" class="clearfix">
+                                    <li> <a href="#" title="Back To home"> <img src="images/icon/shortcut/home.png" alt="home" /><strong>Home</strong> </a> </li>
+                                    <li> <a href="#" title="Website Graph"> <img src="images/icon/shortcut/graph.png" alt="graph" /><strong>Graph</strong> </a> </li>
+                                    <li> <a href="#" title="Setting"> <img src="images/icon/shortcut/setting.png" alt="setting" /><strong>Setting</strong></a> </li> 
+                                    <li> <a href="#" title="Messages"> <img src="images/icon/shortcut/mail.png" alt="messages" /><strong>Message</strong></a><div class="notification">10</div></li>
+                              </ul>
+                          </div>
+                    </div>
+                    
+                  
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-align-left"></i>  Ziceadmin Form </span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                    <!-- title box -->
+                                    <div class="boxtitle"><i class="icon-hdd"></i> Basic Form ,Elements and custom input , go to advace <span class="netip"><a href="vform.html" class="red" title="Live demo  Validation"> form Validation and  Live demo  </a></span>
+                                      </div>
+                                      <form id="demo" /> 
+                                            <div class="section">
+                                                <label> full <small>Text custom</small></label>   
+                                                <div> <input type="text" name="text[]" class=" full" /><span class="f_help">Text custom help</span></div>
+                                           </div>
+                                            <div class="section">
+                                                <label> large <small>Text custom</small></label>   
+                                                <div> <input type="text" class=" large" /><span class="f_help">Text custom help</span></div>
+                                           </div>
+                                            <div class="section">
+                                                <label> medium <small>Text custom</small></label>   
+                                                <div> <input type="text" class=" medium" /><span class="f_help">Text custom help</span></div>
+                                                <div> <input type="text" class=" medium" /><span class="f_help">Text custom help</span></div>
+                                           </div>
+                                            <div class="section">
+                                                <label> small <small>Text custom</small></label>   
+                                                <div> <input type="text" class=" small" /></div>
+                                           </div>
+                                            <div class="section">
+                                                <label> xsmall <small>Text custom</small></label>   
+                                                <div> <input type="text" class=" xsmall" /></div>
+                                           </div>
+                                            <div class="section">
+                                                <label> xxsmall <small>Text custom</small></label>   
+                                                <div> <input type="text" class=" xxsmall" /></div>
+                                           </div>
+                                            <div class="section">
+                                                <label>Iphone checkbox<small>Text custom</small></label>
+                                                <div>
+                                                         <input type="checkbox" class="on_off_checkbox" value="1" checked="checked" />
+                                               </div>
+                                                <div>
+                                                         <input type="checkbox" class="on_off_checkbox" value="1" />
+                                                        <span class="f_help">ON / OFF  </span> 
+                                               </div>
+                                                <div>
+                                                         <input type="checkbox" class="on_off_checkbox" disabled="disabled" />
+                                                        <span class="f_help">Disabled</span> 
+                                               </div>
+                                           </div>
+                                            <div class="section">
+                                                <label> checkbox custom<small>Text custom</small></label>   
+                                                <div> 
+                                                          <input type="checkbox" id="preOrder" name="preOrder" class="preOrder" value="1" />
+                                                          <span class="f_help">Ex. checkbox custom  </span> 
+                                               </div>
+                                               </div>
+                                            <div class="section">
+                                                <label> checkbox css3<small>Text custom</small></label>   
+                                               <div>
+                                                     <div class="checksquared">
+                                                            <input type="checkbox" name="genre" id="checkNormal" value="comedy" />
+                                                            <label for="checkNormal" title="Normal"></label>
+                                                     </div>   
+                                                     <div class="checksquared">     
+                                                            <input type="checkbox" name="genre" id="checked" value="comedy" checked="checked" />
+                                                            <label for="checked" title="Checked"></label>
+                                                     </div>
+                                                     <div class="checksquared">
+                                                            <input type="checkbox" name="genre" id="checkDisabled" value="action" disabled="disabled" />
+                                                            <label for="checkDisabled" title="Disabled"> </label>
+                                                    </div>
+                                                     <div class="checksquared">
+                                                            <input type="checkbox" name="genre" id="checkedDisabled" value="action" disabled="disabled" checked="checked" />
+                                                            <label for="checkedDisabled" title="Checked Disabled "></label>
+                                                     </div>
+                                               </div>
+                                            </div>
+                                            <div class="section">
+                                                <label>Radio css3 <small>Text custom</small></label>   
+                                               <div>
+                                                    <div class="radiorounded">
+                                                        <input type="radio" name="opinions" id="radio-1" value="1" />
+                                                        <label for="radio-1" title="Totally"></label>
+                                                    </div>
+                                                    <div class="radiorounded">
+                                                        <input type="radio" name="opinions" id="radio-2" value="1" checked="checked" />
+                                                        <label for="radio-2" title="You must be kidding"></label>
+                                                    </div>
+                                                    <div class="radiorounded">
+                                                        <input type="radio" name="opinions" id="radio-3" value="1" disabled="disabled" />
+                                                        <label for="radio-3" title="Radio Disabled"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+              
+                                              
+                                            <div class="section">
+                                                <label> checkbox  css3 Limit<small>Max 3 Selected</small></label>   
+                                               <div class="limit3m">
+                                                  <div class="checksquared">
+                                                      <input type="checkbox" name="genre" id="check-1" value="action" checked="checked" />
+                                                      <label for="check-1" title="Action / Adventure"></label>
+                                                  </div>
+                                                  <div class="checksquared">  
+                                                      <input type="checkbox" name="genre" id="check-2" value="comedy" checked="checked" />
+                                                      <label for="check-2" title="Comedy"></label>
+                                                    </div>
+                                                    <div class="checksquared">  
+                                                      <input type="checkbox" name="genre" id="check-3" value="epic" />
+                                                      <label for="check-3" title="Epic / Historical"></label>
+                                                     </div>
+                                                     <div class="checksquared">
+                                                      <input type="checkbox" name="genre" id="check-4" value="science" />
+                                                      <label for="check-4" title="Science Fiction"></label>
+                                                      </div>
+                                                      <div class="checksquared">
+                                                      <input type="checkbox" name="genre" id="check-5" value="romance" />
+                                                      <label for="check-5" title="Romance"></label>
+                                                      </div>
+                                                  <span class="f_help"><span>**</span> Your  Can Selected Max 3 item</span> 
+                                               </div>
+                                           </div>
+                                            <div class="section">
+                                              <label> rating star </label> 
+                                                  <div><input name="my_input" value="5" id="rating_star" type="hidden" /></div>
+                                                  <div><input name="my_input" value="7" id="rating_star2" type="hidden" /></div>
+                                            </div>
+              
+                                          <div class="section ">
+                                          <label> Avartar <small>Fileupload</small></label>   
+                                          <div> 
+                                              <input type="file" class="fileupload" />
+                                          </div>
+                                          </div>
+                                          <div class="section">
+                                            <label>select normal <small>Fix width</small></label>   
+                                            <div>
+                                                <select class="small">
+                                                   <option value="1" />One
+                                                   <option value="2" />Two
+                                                   <option value="3" />Three
+                                                   <option value="4" />Four
+                                                   <option value="5" />five
+                                              </select>       
+                                      </div>
+                                      </div>
+                                          <div class="section">
+                                            <label>select With search<small>Fix width</small></label>   
+                                            <div>
+                                                <select data-placeholder="Choose a Country..." class="chzn-select" tabindex="2">
+                                                <option value="" /> 
+                                                <option value="United States" />United States 
+                                                <option value="United Kingdom" />United Kingdom 
+                                                <option value="Afghanistan" />Afghanistan 
+                                                <option value="Albania" />Albania 
+                                                <option value="Algeria" />Algeria 
+                                                <option value="Austria" />Austria 
+                                                <option value="Azerbaijan" />Azerbaijan 
+                                                <option value="Bahamas" />Bahamas 
+                                                <option value="Bahrain" />Bahrain 
+                                                <option value="Bangladesh" />Bangladesh 
+                                                <option value="Barbados" />Barbados 
+                                                <option value="Belarus" />Belarus 
+                                                <option value="Belgium" />Belgium 
+                                                <option value="Belize" />Belize 
+                                                <option value="Benin" />Benin 
+                                                <option value="Bermuda" />Bermuda 
+                                                <option value="Poland" />Poland 
+                                                <option value="Portugal" />Portugal 
+                                                <option value="Puerto Rico" />Puerto Rico 
+                                                <option value="Qatar" />Qatar 
+                                                <option value="Reunion" />Reunion 
+                                                <option value="Romania" />Romania 
+                                                <option value="Samoa" />Samoa 
+                                                <option value="San Marino" />San Marino 
+                                                <option value="Sao Tome and Principe" />Sao Tome and Principe 
+                                                <option value="Saudi Arabia" />Saudi Arabia
+                                                <option value="Switzerland" />Switzerland 
+                                                <option value="Syrian Arab Republic" />Syrian Arab Republic 
+                                                <option value="Taiwan, Republic of China" />Taiwan, Republic of China 
+                                                <option value="Tajikistan" />Tajikistan 
+                                                <option value="Tanzania, United Republic of" />Tanzania, United Republic of 
+                                                <option value="Thailand" />Thailand 
+                                                <option value="United Arab Emirates" />United Arab Emirates 
+                                                <option value="Zambia" />Zambia 
+                                                <option value="Zimbabwe" />Zimbabwe
+                                              </select>       
+                                      </div>
+                                      </div>
+                                      
+                                            <div class="section">
+                                            <label> Mullti select <small>Text custom</small></label>   
+                                            <div> 
+                                              <select class="chzn-select " multiple="" tabindex="4">
+                                                <option value="" /> 
+                                                <option value="United States" />United States 
+                                                <option value="United Kingdom" />United Kingdom 
+                                                <option value="Afghanistan" />Afghanistan 
+                                                <option value="Albania" />Albania 
+                                                <option value="Algeria" />Algeria 
+                                                <option value="American Samoa" />American Samoa 
+                                                <option value="Andorra" />Andorra 
+                                                <option value="Angola" selected="selected" />Angola 
+                                                <option value="Anguilla" selected="selected" />Anguilla 
+                                                <option value="Antarctica" />Antarctica 
+                                                <option value="Antigua and Barbuda" />Antigua and Barbuda 
+                                                <option value="Argentina" />Argentina 
+                                                <option value="Armenia" />Armenia 
+                                                <option value="Aruba" />Aruba 
+                                              </select></div>
+                                           </div>
+                                             <div class="section">
+                                                 <label> Tag input  <small><img src="images/icon/new.gif" /></small></label>   
+                                               <div><input id="tags_input" type="text" class="tags" value="webstie,manager,webdesign,roffle" /></div>   
+                                   			</div>
+                                             <div class="section">
+                                                 <label> textarea  <small>Elastic</small></label>   
+                                                <div> <textarea name="Textareaelastic" id="Textareaelastic" class="large" cols="" rows=""></textarea></div>   
+                                                
+                                             </div>
+                                 <div class="section">
+                                                 <label> textarea  <small>Limit chars</small></label>   
+                                                <div>
+                                                <textarea name="Textarealimit" id="Textarealimit" class="large" cols="" rows=""></textarea>
+                                                <span class="f_help"> Limit chars <span class="limitchars">140</span></span>
+                                                </div>   
+                                                
+                                             </div>
+                                            <div class="section last">
+                                                <div><a class="uibutton loading" title="Saving" rel="1">submit</a> <a class="uibutton special">clear form</a> <a class="uibutton loading confirm" title="Checking" rel="0">Check</a> </div>
+                                           </div>
+                                        </form>
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-upload-alt"></i>  MutiUpload and  WYSIWYG Full  Width</span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                <div class="boxtitle">  WYSIWYG editor Full  Width </div>	
+                                <form /> 
+                                <div> <textarea name="editor2" id="editor2" class="editor" cols="" rows=""></textarea></div><br />
+                                <div>
+                                      <div class="demo-box">
+                                      <div style="border:#fafafa 20px solid;">
+                                        <div id="custom-queue" class="custom-queue"></div>
+                                      </div>
+                                      </div>
+                                      <div id="uploadButton">
+                                            <div id="uploadify"></div>
+                                      </div>
+                                      <div id="uploadButtondisable"></div>
+                                      <div class="upload-group">
+                          					<a class="uibutton  icon add " id="upload_b">add file</a>
+                         					<a href="javascript:$('#uploadify').uploadifyClearQueue();" class="uibutton disable" id="upload_c">clear file</a>    
+                                          	<a class="uibutton  disable " id="uploadFile">upload</a>            
+                                          <span id="status-message"></span>
+                                      </div>
+                                </div>
+                                </form>
+                          
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-credit-card"></i>  Form Cloning <img src="images/icon/new.gif" /></span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                <form />
+                                <div id="cloneForm">
+                                  <!-- Form template-->
+                                  <div id="cloneForm_template">
+                                      <div class="section">
+                                            <label>input <span id="cloneForm_label"></span><small>Clone<span id="cloneForm_label"></span> </small></label>
+                                            <div> <input type="text" id="input_#index#_clone" class=" medium" name="#index#" /> <a id="cloneForm_remove_current" class="clone-delete"><i class="icon-remove"></i></a></div>
+                                      </div>
+                                  </div>
+                                  <div id="cloneForm_noforms_template">
+                                  		<div class="alert alert-block  alert-info"> Add a new input  with click  <strong> New input </strong>.</div>
+                                  </div>
+                                  <div class="section last">
+                                          <div id="cloneForm_controls">
+                                            <span id="cloneForm_add" class="tip"><a class="btn btn-large" title="New input"><i class="icon-plus"></i> New input</a></span>
+                                            <span id="cloneForm_remove_last" class="tip"><a class="btn btn-large" title="Remove"><i class="icon-trash"></i></a></span>
+                                            <span id="cloneForm_remove_all" class="tip"><a class="btn btn-large btn-danger" title="Remove All">Remove All</a></span>
+                                          </div>
+                                  </div>
+                                </div>
+                                </form>
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-road"></i>  Masked input</span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                <form />
+                                <div class="section">
+                                    <label>Date Masked <small> mm/dd/yyyy</small></label>
+                                    <div>
+                                        <input id="date" value="1231" type="text" tabindex="1" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Date Masked <small> mm/dd/yyyy</small></label>
+                                    <div>
+                                        <input id="dateMasked" value="1231" type="text" tabindex="1" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Datepicker Masked <small> mm-dd-yyyy</small></label>
+                                    <div>
+                                        <input id="datepicker" type="text" tabindex="1" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Phone <small>(999) 999-9999 </small></label>
+                                    <div>
+                                        <input id="phone" type="text" tabindex="2" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Phone + Ext <small>(999) 999-9999? x99999</small></label>
+                                    <div>
+                                        <input id="phoneExt" type="text" tabindex="2" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Int'l Phone<small>+44 (999) 999-9999</small></label>
+                                    <div>
+                                        <input id="iphone" type="text" tabindex="2" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Tax ID<small>99-9999999</small></label>
+                                    <div>
+                                        <input id="tin" type="text" tabindex="3" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>SSN<small>999-99-9999</small></label>
+                                    <div>
+                                        <input id="ssn" type="text" tabindex="4" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Product Key <small>a*-999-a999</small></label>
+                                    <div>
+                                        <input id="product" type="text" tabindex="5" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Eye Script<small>~9.99 ~9.99 999</small></label>
+                                    <div>
+                                        <input id="eyescript" type="text" tabindex="6" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label>Purchase Order<small>aaa-999-***</small></label>
+                                    <div>
+                                        <input id="po" type="text" tabindex="6" />
+                                        <span class="f_help"></span>
+                                    </div>
+                                </div>
+                                <div class="section last">
+                                    <label>Percent Process <small>99%</small></label>
+                                    <div>
+                                        <input id="pct" type="text" tabindex="6" />
+                                        <span class="f_help">Percent ProcessBar</span>
+                                        <div class="bar clearfix">
+                                            <div class="percent"><span style="width: 100%;"></span></div>
+                                            <div class="circle"><span>0%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-magnet"></i>  spinner input fields</span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                <form action="" /> 
+                                      <div class="section">
+                                          <label>Basic spinner</label>
+                                          <div>
+                                              <input type="text" id="sDec" value="5" />
+                                          </div>
+                                      </div>
+                                      <div class="section">
+                                          <label>MinMax spinner <small>min: -100, max: 100</small></label>
+                                          <div>
+                                              <input type="text" id="sMinMax" value="5" />
+                                          </div>
+                                      </div>
+                                      <div class="section">
+                                          <label>decimals <small>Step: 0.25</small></label>
+                                          <div>
+                                              <input type="text" id="sStep" value="0.25" />
+                                          </div>
+                                      </div>
+                                      <div class="section">
+                                          <label>Currency </label>
+                                          <div>
+                                              <input type="text" id="sCur" value="10" />
+                                          </div>
+                                          <div>
+                                              <input type="text" id="sCur2" value="10" />
+                                          </div>
+                                      </div>
+                                      <div class="section">
+                                          <label>Data List</label>
+                                          <div>
+                                              <ul id="sInline">
+                                                  <li>item 1</li>
+                                                  <li>item 2</li>
+                                                  <li>item 3</li>
+                                                  <li>item 4</li>
+                                                  <li>item 5</li>
+                                                  <li>item 6</li>
+                                                  <li>item 7</li>
+                                                  <li>item 8</li>
+                                                  <li>item 9</li>
+                                                  <li>item 10</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="section last">
+                                          <label>Presenters </label>
+                                          <div><div id="sLink"></div></div>
+                                      </div>
+                                </form>
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-road"></i>  DualListbox</span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                
+                                <div class="row-fluid">
+                                	<div class="span5">
+                                    <div class="clearfix">
+                                    <input type="text" id="box1Filter" placeholder="Filter" /><br />
+                                    <select id="box1View" multiple="multiple" style="height:300px;width:100%;">
+                                        <option value="501649" />2008-2009 "Mini" Baja
+                                        <option value="501497" selected="selected" />AAPA - Asian American Psychological Association
+                                        <option value="501053" />Academy of Film Geeks
+                                        <option value="500001" />Accounting Association
+                                        <option value="501227" />ACLU
+                                        <option value="501610" selected="selected" />Active Minds
+                                        <option value="501514" selected="selected" />Activism with A Reel Edge (A.W.A.R.E.)
+                                        <option value="501656" selected="selected" />Adopt a Grandparent Program
+                                        <option value="501050" />Africa Awareness Student Organization
+                                        <option value="501075" />African Diasporic Cultural RC Interns
+                                        <option value="501493" selected="selected" />Agape
+                                        <option value="501562" />AGE-Alliance for Graduate Excellence
+                                        <option value="500676" />AICHE (American Inst of Chemical Engineers)
+                                        <option value="501460" />AIDS Sensitivity Awareness Project ASAP
+                                        <option value="500004" />Aikido Club
+                                        <option value="500336" />Akanke
+                                    </select>
+                                    </div>
+            
+            
+                                   <span id="box1Counter" class="countLabel"></span>
+                                   <select id="box1Storage"></select>
+            
+                                    </div>
+                                	<div class="span2" align="center">
+                                        <div class="boxMove">
+                                            <p>
+                                            <a class="btn btn-large" id="to2"><i class="icon-step-forward"></i></a>
+                                            <a class="btn btn-large" id="allTo2"><i class="icon-fast-forward"></i></a>
+                                            </p>
+                                            <p>
+                                            <a class="btn btn-large" id="to1"><i class="icon-step-backward"></i></a>
+                                            <a class="btn btn-large" id="allTo1"><i class="icon-fast-backward"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                	<div class="span5">
+                                    <input type="text" id="box2Filter" placeholder="Filter" /><br />
+                                    <select id="box2View" multiple="multiple" style="height:300px;width:100%;"></select>
+                                    
+                                    <!-- clear fix -->
+                                    <div class="clear"></div>
+        
+                                    <span id="box2Counter" class="countLabel"></span>
+                                    <select id="box2Storage"></select>
+                                    </div>
+                                </div>
+                                
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div class="row-fluid">
+                    
+                    		<!-- Widget -->
+                            <div class="widget  span12 clearfix">
+                            
+                                <div class="widget-header">
+                                    <span><i class="icon-calendar"></i>  Date ,Time and Color picker</span>
+                                </div><!-- End widget-header -->	
+                                
+                                <div class="widget-content">
+                                <form action="" /> 
+                                   <div class="section colorPickerFlatShow">
+                                        <label>color picker<small>Flat mode </small></label>
+                                        <div><div id="colorPickerFlat"></div></div>
+                                    </div>   
+                                    <div class="section ">
+                                    <label>color picker<small>Choose Color</small></label>
+                                        <div>
+                                             
+                                             <input type="text" class="small" id="colorpickerField" value="#ffffff" />
+                                             <span class="f_help">Choose With inputbox</span> 
+                                             <div class="clear"></div>				 
+                                             <div id="colorPicker">
+                                                    <div style="background-color: #a4d143"></div>
+                                             </div>
+                                             <br class="clear" />
+                                             <br class="clear" />
+                                       </div>
+                                    </div>   
+                                    <div class="section datepickerInlineShow">
+                                        <label>Date picker Inline</label>   
+                                        <div><div class="datepickerInline"></div></div>
+                                    </div>
+                                    <div class="section">
+                                        <label>Date picker</label>   
+                                        <div><input type="text" id="datepick" class="datepicker" readonly name="datepicker" /></div>
+                                    </div>
+                                    <div class="section">
+                                        <label>birthday picker <small>Full Month Year</small></label>   
+                                        <div><input type="text" id="birthday" class=" birthday  small " name="birthday" /></div>
+                                    </div>   
+                                    <div class="section">
+                                        <label>Datetime picker<small>Date Timepicker</small></label>   
+                                        <div><input type="text" id="datetimepicker" readonly name="datetimepicker" /></div>
+                                    </div> 
+                                    <div class="section last">
+                                        <label>time picker<small>Timepicker</small></label>   
+                                        <div><input type="text" id="timepicker" readonly name="timepicker" /></div>
+                                    </div> 
+                                </form>
+                                </div><!--  end widget-content -->
+                            </div><!-- widget  span12 clearfix-->
+
+                    </div><!-- row-fluid -->
+                    <div id="footer"> &copy; Copyright 2012 <span class="tip"><a href="#" title="Zice Admin">Your Company Name</a> </span> </div>
+                    
+                </div> <!--// End inner -->
+              </div> <!--// End ID content --> 
+
+        </body>
+        </html>

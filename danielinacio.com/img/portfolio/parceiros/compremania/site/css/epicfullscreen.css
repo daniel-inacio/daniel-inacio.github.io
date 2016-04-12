@@ -1,0 +1,24 @@
+	/*
+	Skin Name: base
+	Description: Skin for epicFullscreen plugin
+	Version: 1.0
+	Author: unlimitDesign
+	*/
+
+
+	/*Wrapper
+	-------------------*/
+	
+	.epicFullscreen{width:100%;height:100%;position:absolute;/*switch to fixed for scrolling content*/overflow:hidden;top:0px;left:0px;z-index:-1;background:#fff url(../images/loader-light.gif) center center no-repeat;}
+
+
+	/*Overlay
+	-------------------*/
+	
+	.epicFullscreen #epic-overlay{position:absolute;width:100%;height:100%;background:transparent url(../images/pattern-epic.png) repeat top left;z-index:2;}
+	
+	
+	/*Image
+	-------------------*/
+	
+	.epicFullscreen img{opacity:0;position:absolute;top:0px;left:0px;width:100%;}

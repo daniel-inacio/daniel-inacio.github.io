@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Carrois+Gothic);
+@import url("bootstrap.css");
+@import url("960.css");
+
+body,html{
+    margin:0px;
+    margin-top:10px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.map{
+    height:200px;
+    border:1px solid #999 !important;
+    -webkit-box-shadow: 0 0 5px #999 !important;
+    -moz-box-shadow: 0 0 5px #999 !important;
+    box-shadow: 0 0 5px #999 !important; 
+    display: none;
+}
+.add-on{
+    width: 70px !important;
+    text-align: right !important;
+}
+
+i{margin-top: 2px !important;}
+.form-cep{
+    padding:0px;
+    padding-top:20px;
+    padding-bottom:10px;
+    border:1px solid #999 !important;
+    -webkit-box-shadow: 0 0 10px #888 !important;
+    -moz-box-shadow: 0 0 10px #888 !important;
+    box-shadow: 0 0 10px #888 !important;    
+}
+.invalid{
+    border:1px solid red !important;
+}
+.invalid:focus{
+    border:1px solid red !important;
+    border-color: #e9322d !important;
+    -webkit-box-shadow: 0 0 10px #f8b9b7 !important;
+    -moz-box-shadow: 0 0 10px #f8b9b7 !important;
+    box-shadow: 0 0 10px #f8b9b7 !important;
+}
+.shadow{
+    height:205px;
+    border:1px solid #888 !important;
+    -webkit-box-shadow: 0 0 10px #888 !important;
+    -moz-box-shadow: 0 0 10px #888 !important;
+    box-shadow: 0 0 10px #888 !important;        
+}

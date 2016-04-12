@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" href="images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/epicfullscreen.css" />
+<link rel="stylesheet" type="text/css" href="css/udt_shortcodes.css" />
+<link rel="stylesheet" type="text/css" href="css/udt_media_queries.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+<title>Conheça o Shopping Virtual COMPREMANIA.COM</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-touch-swipe-1.0.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/jquery.epicfullscreen.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>   
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/onepage.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/subscribe.js"></script>
+
+
+<script type="text/javascript">
+
+			
+			 
+
+			//device check
+			var isMobile = false;
+	
+			if( navigator.userAgent.match(/Android/i) || 
+				navigator.userAgent.match(/webOS/i) ||
+				navigator.userAgent.match(/iPhone/i) || 
+				navigator.userAgent.match(/iPad/i)|| 
+				navigator.userAgent.match(/iPod/i) || 
+				navigator.userAgent.match(/BlackBerry/i)){
+								
+					isMobile = true;
+							
+			}
+			
+			
+			
+			//epic fullscreen
+			$(window).load(function(){
+	
+				 $('.epicFullscreen').epicFullscreen({
+				 
+					opacity:0.9,
+					background:'#CCFF00',
+					pattern:true,
+					callback: function(){
+					
+						
+						$('#featured').animate({opacity:1},500);
+						
+						
+					}
+				 
+				 });	
+			});
+			
+			
+			 //twitter
+			 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		
+		
+</script>
+
+</head>
+
+<body>
+
+<!--start wrapper-->
+<div id="wrapper">
+
+	<!--start header-->
+    <div class="header header-main clearfix">
+		<div class="inner">
+			<div class="logo-pages">
+				<div class="logo">
+                	<a class="navigateTo" href="#homepage">
+						<img src="images/logo-header.png" alt=""/>                   
+                    </a>
+				</div>
+			</div>
+            
+            <!--mobileMenu toggle-->
+            <div class="mobileMenuToggle"><a href="#"></a></div>
+                
+            <!--navigation-->
+            <ul class="navigation">
+                <li><a class="navigateTo" href="#homepage">Apresentação</a></li>
+                <li><a class="navigateTo" href="#Como-Funciona">Como Funciona</a></li>
+                <li><a class="navigateTo" href="#Entrar-para-o-CM">Entrar no CM</a></li>
+                <li><a class="navigateTo" href="#Me-avise">Me avise!</a></li>
+                <li><a class="navigateTo" href="contact.html">Contato</a></li>
+            </ul>
+		</div>
+    </div>
+    <!--end header--> 
+      
+	<!--start homepage-->
+	<div id="homepage" class="homepage section">
+    
+    	<!--background image-->
+        <div class="epicFullscreen">
+			<img class="epicImg" src="images/gallery/homepage-image.jpg" alt=""/>
+    	</div>
+        
+        <!--start featured content-->
+        <div class="content clearfix" id="featured">   
+                
+			<!--feature-->
+			<div class="column_homepage-1">
+            	<div class="thumb">
+					<img src="images/gallery/iphone-homepage.png" alt="Encore feature"/>
+                </div>
+			</div>
+            
+            <!--info-->
+			<div class="column_homepage-2 last">
+				<div class="logo-homepage">
+					<img src="images/logo.png" alt="" />
+				</div>
+	    <div style="line-height:23px; !important">		
+             <p>Seus <strong>CLIENTES</strong> encontram sua empresa <br />da maneira que você gostaria?<br>
+				Quer <strong>AUMENTAR</strong> as vendas de sua empresa?<br />
+				Que tal sua marca ser <strong>mais reconhecida?</strong><br />
+				Conheça o <strong><u>SHOPPING VIRTUAL COMPRE MANIA!</u></strong><br> onde as pessoas encontrarão seus produtos e serviços,<br> sem ter que sair de casa.
+</p></div>
+                <div id="app-button-container">
+					<!--<a id="button-appstore" href="planos/" title="Montar Minha Loja"></a>-->
+                    <a  id="button-tweet" href="planos/" title="Clique e veja nossos Planos."></a>  
+                </div>
+              
+                <div class="note">*Veja como funciona uma Loja no<a class="navigateTo" href="#Como-Funciona"> Shopping CompreMania.</a></div>
+			</div>
+            
+             <!--start page down-->
+            <a class="navigateTo page-down" href="#Como-Funciona"></a>
+            
+        </div>
+        <!--end featured content-->   
+        
+    </div>
+	<!--end homepage-->
+      
+    
+	<!--start page 2-->
+	<div id="Como-Funciona" class="page odd section scroll" style="background:#fff url(images/patterns/test-pattern.png) repeat;">
+     
+ 		<!--start featured content-->
+        <div class="content clearfix">   
+                
+				<!--Como Funciona-->
+			<div class="column_one_half">
+				<h1 class="focus-title"><span>Como Funciona?</span></h1>
+                 <p class="info-focus">Você empresário poderá vender seus produtos e serviços em uma loja dentro de um Shopping Virtual com facilidade.</p>
+               </p><h6><span>E quanto tempo leva?</span></h6><p>Com um catálogo com o nome, preço, descrição e fotos dos produtos em alguns minutos sua loja estará pronta e totalmente personalizada.</p>
+                <div class="column_one_half">
+                	<h6><span>Você pode definir:</span></h6>
+                    <ul class="greenDot last">
+                    <li class="greenTick">Promoções/Destaques.</li>
+                    <li class="greenTick">Tempo de permanência de cada produto.</li>
+                    <li class="greenTick">Galerias de fotos dos produtos.</li>
+                    <li class="greenTick">Banner Rotativos.</li>
+                    <li class="greenTick">Localização.</li>
+                    </ul>
+   				 </div>
+    <div class="column_one_half last">            
+                <h6><span>E como administrar?</span></h6>
+                <ul class="greenDot last">
+				<li class="greenTick">Painel administrativo.</li>
+				<li class="greenTick">Cadastro dos seu Produtos.</li>
+				<li class="greenTick">Controle de Pedidos.</li>
+				<li class="greenTick">Controle de Estoque.</li>
+                <li class="greenTick">Criação de Etiquetas.</li>
+                <li class="greenTick">Google Analitycs</li>
+			</ul>
+   </div>        
+                
+                <a class="media app-button play" href="images/gallery/loja_exemplo.jpg">Exemplo do layout da Loja Virtual <br/><span>Clique para aumenta-la</span></a>
+			</div>
+            
+            <!--image-->
+			<div class="column_one_half last stripe-indicator-left">
+            	<div class="thumb feature right">
+					<img src="images/gallery/iphone-feat-1.png" alt=""/>
+                </div>
+			</div>
+        </div>
+        <!--end featured content-->  
+        
+        <!--start highlight-->
+        <div id="highlight" class="highlight fixed" style="background: url(images/gallery/parallax-shapes.jpg) no-repeat;">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-inner">
+                        <div class="column_one_half">
+                            <h5><span style="color: #333 !important;">E a segurança na compra?</span></h5>
+                             <p class="info-focus" style="color:#333 !important; background-color:#FFF !important; text-align:left !important; padding:10px !important;border-radius: 3px !important;
+-moz-border-radius: 3px !important;
+-webkit-border-radius: 3px !important;">Sabemos que a segurança é um quesito essencial para o usuário ter plenamente confiança na compra online, então iremos ajudar a esclarecer com o vídeo ao lado o sistema de pagamento que utilizamos o Pagseguro.</p>
+                        
+                        </div>
+                        <div class="column_one_half last">
+                            <div class="video" style="width:100%;height:234px;">
+                               <iframe width="416" height="234" src="http://www.youtube.com/embed/G28emvEhmFw?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!--section-button-->
+            <div class="section-button">
+                <a class="navigateTo page-up" href="#Como-Funciona"></a>
+            </div>
+        </div>
+        <!--end highlight-->  
+        
+       
+        
+	</div>
+	<!--end page 2--> 
+    
+   
+    
+	<!--start page 3-->
+	<div id="Entrar-para-o-CM" class="page even section">
+     
+ 		<!--start featured content-->
+        <div class="content clearfix">   
+                
+			<!--image-->
+			<div class="column_one_half stripe-indicator-right">
+            	<div class="thumb feature left">
+					<img src="images/gallery/iphone-feat-2.png" alt=""/>
+                </div>
+			</div>
+            
+            <!--info-->
+			<div class="column_one_half last">
+               <h1 class="focus-title"><span>Quero uma loja no Compre Mania!</span></h1>
+                <p class="info-focus">Estamos quase prontos para o lançamento e queremos sua empresa conosco rumo ao sucesso.</p>
+                <p>Entre em contato conosco para conhecer nossos planos ou agende uma visita com nossos consultores.</p> 
+                
+             
+				<a class="media app-button sync" href="contact2.html">Agende uma visita.<br/><span>aqui</span></a>
+			</div>
+        </div>
+        <!--end featured content-->   
+        
+        <!--start highlight-->
+        <div id="highlight-2" class="highlight scroll" style="background: url(images/gallery/parallax-cd-wall.jpg) repeat;">
+            <div class="info-container">
+                <div class="info">
+                  <!-- Notícias -->
+              <h4><span style="color:#000 !important;">E-Commerce movimenta R$ 22,5 bilhões em 2012</span></h4>
+              <p class="info-focus" style="color:#333 !important; background-color:#FFF !important; text-align:left !important; padding:10px !important;border-radius: 3px !important;
+-moz-border-radius: 3px !important;
+-webkit-border-radius: 3px !important;">"Em comparação com o mesmo período do ano passado, o aumento foi de 21%, segundo dados revelados na 26ª edição do relatório WebShoppers, realizado pela e-bit a pesquisa apontou também as compras coletivas deixaram de ser novidade no mercado on-line. A modalidade faturou mais de R$ 731 milhões no período, um crescimento de 2% em relação ao primeiro semestre do ano passado." <span style="font-size:12px; font-style:italic;">fonte: <a target="new" href="http://bit.ly/OSeWYg">ecommercenews</a></span></p>
+<a href="contact.html">
+<span style="background-color:#FFF !important; padding:3px;">Entre em contato para conhecer os planos do CM.
+</span>
+</a>
+                       
+                </div>
+            </div>
+             <!--section-button-->
+            <div class="section-button">
+                <a class="navigateTo page-up" href="#Entrar-para-o-CM"></a>
+            </div>
+        </div>
+        <!--end highlight--> 
+        
+       
+        
+	</div>
+	<!--end page 3--> 
+    
+   
+    
+    <!--start signup-->
+	<div id="Me-avise" class="page even section">
+    
+		<!--start featured content-->
+        <div class="content clearfix centeralign">      
+    
+			<h4 class="focus-title newsletter-title"><span>Cadastre-se seu e-mail para a estreia do CM</span></h4>
+            
+            <p class="newsletter-content">Você não receberá nenhum tipo de spam, apenas um e-mail de aviso ao lançamento do CompreMania.</p>
+            
+			<form action="http://www.compremania.com.br/teaser/php/assinatura.php" method="post" class="signup" id="newsletter-form">
+				<p><input type="text" name="signup_email" id="signup_email" class="required" value="Seu e-mail" onFocus="javascript:this.value=''" /></p>
+				<input type="submit" value="Enviar" class="signupSubmit" id="submitform" />
+				<div id="newsletter-msg-wrapper" style="position:relative; clear:both; width:100%;">
+					<div id="newsletter-loader"></div>
+					<span id="newsletter-msg"> &nbsp; </span>
+				</div>
+			</form>
+         
+         </div>
+         
+        <!--section-button-->
+        <div class="section-button last-page">
+        	<a class="navigateTo page-up"  href="#homepage"></a>
+        </div>
+        
+	</div>
+	<!--end signup--> 
+    
+    
+	<!--start footer-->
+	<div id="footer" class="even">
+    
+		<div class="content">
+       
+			<!--logo-->
+            <div class="logo">
+            	<a class="navigateTo" href="#homepage">
+                	<img src="images/logo-common.png" alt=""/>
+                </a>
+            </div>
+            
+            <!--copyright-->
+            <p class="copyright">&copy; <a href="http://www.compremania.com/" title="CompreMania">CompreMania</a> 2012. Todos os direitos reservados.</p>
+            
+            <!--social-->
+            <div id="social-share">
+            
+            	<!--fb-->
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/compremania;send=false&amp;layout=button_count&amp;width=80&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=196621353694874" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;float:left;"></iframe>
+                
+                <!--twitter-->
+            	<a href="http://twitter.com/share?url=http://compremania.com.br/&amp;text=Eu quero:______ no @compremania." class="twitter-share-button">Tweet</a>
+            
+            </div>
+            
+        </div>
+        
+    </div>
+    <!--end footer-->
+
+</div>        
+<!--end wrapper-->   
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36404650-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

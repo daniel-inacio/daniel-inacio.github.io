@@ -1,0 +1,365 @@
+{   
+     "idioma": [
+        {
+            "tIdioma": "Language",
+            "pt": "Portuguese",
+            "en": "English",
+            "es": "Spanish"
+        }
+        
+    ],
+     "infoPessoal": [
+        {
+            "nome": "Daniel Inácio da Silva Júnior",
+            "subtitulo": "Web Developer - 24 years old - Franca SP - Brazil",
+            "frase": "A passionate professional for technology and Design. I think applications should be built with the utmost simplicity and practicality combining a clean, pleasant and friendly layout"
+        }
+        
+    ],
+    "menu": [
+        {
+            "menu1": "Portfolio",
+            "menu2": "Skills",
+            "menu3": "Experience and Training",
+            "menu4": "Contact",
+            "projeto": "Recent projects"
+        }
+        
+    ],
+    "habilidades": [
+        {
+            "front": "Front-end",
+            "back": "Back-end",
+            "bd": "Database",
+            "fram": "Frameworks",
+            "graf": "Graphics"
+        }
+        
+    ],
+    "formacao": [
+        {
+            "t_formacao": "Training",
+            "forma1_titulo": "FATEC - Faculty of Technology Dr. Thomaz Novelino",
+            "forma1_curso": "Technologist in Systems Analysis and Development",
+            "forma1_perido": "2011 - 2014 - ",
+            "forma2_titulo": "IFMG - Federal Institute of Minas Gerais",
+            "forma2_curso": "Computer technician - Web Programming",
+            "forma2_perido": "2007 - 2009 - ",
+            "forma3_titulo": "State School José Bernardes de Faria",
+            "forma3_curso": "High School",
+            "forma3_perido": "2002 - 2008 - ",
+            "forma4_titulo": "Municipal School Franklin de Carvalho Teacher",
+            "forma4_curso": "Elementary School",
+            "forma4_perido": "1997 - 2001 - ",
+            "t_exp": "Professional Experience",
+            "exp1_empresa": "Orgsystem Software",
+            "exp1_cargo": "Web Developer",
+            "exp1_perido": "Desde 2014 - ",
+            "exp2_empresa": "Homea Applied Solution",
+            "exp2_cargo": "Web Designer",
+            "exp2_perido": "2013 - 2014 - ",
+            "exp3_empresa": "IDESUFRAN / AMAZONAS – Digital Citizen Project",
+            "exp3_cargo": "Computer Teacher",
+            "exp3_perido": "2011 - 2014 - ",
+            "exp4_empresa": "IBGE - Brazilian Institute of Geography and Statistics",
+            "exp4_cargo": "Census Agent Computer",
+            "exp4_perido": "2010 - 2011 - ",
+            "link_contato": "contact"            
+        }
+        
+    ],
+    "contato": [
+        {
+            "t_titulo_c": "Contact",
+            "t_nome": "Name",
+            "t_fone": "Telephone",
+            "t_email": "Email",
+            "t_msg": "Message",
+            "t_btn": "Send"
+
+        }
+        
+    ],
+    "homea": [
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/folder1_danielinacio.com.png",
+            "descricao_img": "Homea - Folder Course Biodynamic Compost",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The company Homea applied Solution provides consultancy in the area of ​​agriculture and research to the development of biodynamic fertilizers."
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/folder2_danielinacio.com.png",
+            "descricao_img": "Homea - Folder Homeopathy Course Preventive.",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/folder3_danielinacio.com.png",
+            "descricao_img": "Homea – Folder Christmas 2013",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/site_danielinacio.com.png",
+            "descricao_img": "site",
+            "classe":"",
+            "link":"<a href='http://www.homea.com.br' target='_blank'>",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Homea Solução Aplicada",
+            "img": "homea/homea_card_danielinacio.com.png",
+            "descricao_img": "Homea - Business Card",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+        
+    ],
+    "lazarini": [
+        {
+            "titulo": "Studio Lazarini",
+            "img": "studiolazarini/layoutlazarini1_danielinacio.com.png",
+            "descricao_img": "The site www.studiolazarini.com was developed for a portfolio that shows all the works of an artist from the city of Franca, Brazil.",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The Studio Lazarini is owned by the Artist Aguinaldo Lazarini - Illustrator, Designer and Art Finalist."
+        }
+    ],
+    "cidadaodigital": [
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/cartaz1_cidadaodigital_danielinacio.com.png",
+            "descricao_img": "Digital School Citizen - Poster Disclosure Courses 2013 Version A3",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The Digital Citizen School is a school specializing in professional courses, which are taught Basic Course and Advanced Information Technology and Web Designer."
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/cartaz2_cidadaodigital_danielinacio.com.png",
+            "descricao_img": "Digital School Citizen - Poster Disclosure Courses 2013 Reduced Monochrome",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/cartaz3_cidadaodigital_danielinacio.com.png",
+            "descricao_img": "Digital School Citizen - Poster Disclosure Courses 2013 Web Version",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/site_danielinacio.com.png",
+            "descricao_img": "School Citizen Digital - Web Site",
+            "classe":"",
+            "link":"<a href='danielinacio.com/img/portfolio/parceiros/cidadaodigital/site' target='_blank'>",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/certificado1_danielinacio.com.png",
+            "descricao_img": "Digital School Citizen - A Basic Course in Computing",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "Cidadão Digital",
+            "img": "cidadaodigital/certificado2_danielinacio.com.png",
+            "descricao_img": "Digital School Citizen - A Basic Course in Computing",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+        
+    ],
+    "idesufran": [
+        {
+            "titulo": "",
+            "img": "idesufran/layoutidesufran_danielinacio.com.png",
+            "descricao_img": "Instituto IDESUFRAN www.institutoidesufran.com",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The IDESUFRAN Institute is an NGO that has worked with social projects in the region of Franca SP and has received more than 5000 young people in digital inclusion"
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/iv_encontro_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN - Logo IV International Meeting on Research in Tropical Medicine Institutional and high dilutions",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/arvore_da_vida_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN – Tree of Life",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/idesufran_card_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN - Business card",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        },
+        {
+            "titulo": "",
+            "img": "idesufran/folder1_idesufran_danielinacio.com.png",
+            "descricao_img": "IDESUFRAN - Flyer disclosure of the NGO",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+
+    ],
+    "compremania": [
+        {
+            "titulo": "",
+            "img": "compremania/site_cm_danielinacio.com.png",
+            "descricao_img": "",
+            "classe":"",
+            "link":"<a href='danielinacio.com/img/portfolio/parceiros/compremania/site' target='_blank'>",
+            "descricao_projeto":"The Virtual Shopping Buy Mania is a market place where traders and professionals can promote and sell their products or services online."
+        },
+        {
+            "titulo": "",
+            "img": "compremania/cmcard_danielinacio.com.png",
+            "descricao_img": "CompreMania - Business Card",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+    ],
+    "km5": [
+        {
+            "titulo": "",
+            "img": "km5/layout_km5_2_danielinacio.com.png",
+            "descricao_img": "Layout site version 1 - www.km5.tv",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Km5.tv was a closed network channel whose theme is Extreme Sports"
+        },
+        {
+            "titulo": "",
+            "img": "km5/layout_km5_1_danielinacio.com.png",
+            "descricao_img": "Layout site version 2 - www.km5.tv",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+    ],
+    "mmpm": [
+        {
+            "titulo": "",
+            "img": "ministerio_missoes_para_o_mundo/logo_missoes_danielinacio.com.png",
+            "descricao_img": "Ministry missions to the world - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"he Ministry missions to the world is a charitable religious institution that helps financially needy communities in countries in South America and Africa"
+        },
+        {
+            "titulo": "",
+            "img": "ministerio_missoes_para_o_mundo/ministerio_cardpng_danielinacio.com.png",
+            "descricao_img": "Ministry missions to the world - Business Card",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":""
+        }
+    ],
+    "pains": [
+        {
+            "titulo": "",
+            "img": "pains/layoutpains_danielinacio.com.png",
+            "descricao_img": "Layout site www.painsesporteclube.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The Pains Sport Club is a football team in the state of Minas Gerais."
+        }
+    ],
+    "phocomagazine": [
+        {
+            "titulo": "",
+            "img": "phocomagazine/layoutphocomagazine_danielinacio.com.png",
+            "descricao_img": "Layout site www.phocomagazine.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Phoco Magazine was a news magazine and local events in the city of Lavras - MG."
+        }
+    ],
+    "esquadraomotoclube": [
+        {
+            "titulo": "",
+            "img": "esquadraomotoclube/layoutesquadraomotoclube_danielinacio.com.png",
+            "descricao_img": "Layout site www.esquadraomotoclubeformiga.com.br",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The Squadron Motorcycle Club is a biker group of Formiga MG."
+        }
+    ],
+    "blognovo": [
+        {
+            "titulo": "",
+            "img": "blognovo/blogonovo_logo_dnaielinacio.com.png",
+            "descricao_img": "Blognovo.net - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Entertainment Blog."
+        }
+    ],
+    "zoomdesign": [
+        {
+            "titulo": "",
+            "img": "zoomdesign/logo_zoomdesign_danielinacio.com.png",
+            "descricao_img": "ZoomDesign - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Visual Communication."
+        }
+    ],
+    "prevsimples": [
+        {
+            "titulo": "",
+            "img": "prevsimples/logo_prevsimples_danielinacio.com.png",
+            "descricao_img": "PrevSimples - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"Advise and assist social security."
+        }
+    ],
+    "gamadiesel": [
+        {
+            "titulo": "",
+            "img": "gamadiesel/logo_gamadiesel_danielinacio.com.png",
+            "descricao_img": "GamaDiesel - Logo",
+            "classe":"materialboxed",
+            "link":"",
+            "descricao_projeto":"The company Gama Diesel specializes in sales maintenance injection pumps and is located in Formiga MG."
+        }
+    ],
+    "marceloveiculos": [
+        {
+            "titulo": "",
+            "img": "marceloveiculos/site_marceloveiculos_formiga_danielinacio.com.png",
+            "descricao_img": "Marcelo Vehicles - Site www.marceloveiculosformiga.com.br",
+         	"classe":"materialboxed",
+         	"link":"",
+            "descricao_projeto":"The company is a reseller Marcelo vehicles and new and used vehicles."
+           
+        }
+    ]
+}
